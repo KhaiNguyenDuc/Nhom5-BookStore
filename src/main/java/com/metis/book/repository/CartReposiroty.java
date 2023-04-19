@@ -7,8 +7,8 @@ import com.metis.book.model.Cart;
 import com.metis.book.model.user.User;
 
 @Repository
-public interface CartRepository extends JpaRepository<Cart, Long> {
+public interface CartReposiroty extends JpaRepository<Cart, Long> {
 
-    Cart findByUser(User user);
+	Cart findByUser(User user);
 
 }
