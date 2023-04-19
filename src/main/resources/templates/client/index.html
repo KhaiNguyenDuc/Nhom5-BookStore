@@ -21,7 +21,7 @@
 		                        <div class="col-md-12">
 		                            <h1 class="m-b-20"><strong>Welcome To <br> Metis's Book</strong></h1>
 		                            <p class="m-b-40">When it comes to searching for books, there is only one place to turn to – Metis's Book.</p>
-		                            <p><a class="btn hvr-hover" href="#">Shop New</a></p>
+		                            <p><a class="btn hvr-hover" th:href="@{/shop/Tatca?page=1}">Shop New</a></p>
 		                        </div>
 		                    </div>
 		                </div>
@@ -33,7 +33,7 @@
 		                        <div class="col-md-12">
 		                            <h1 class="m-b-20"><strong>Welcome To <br> Book Hub</strong></h1>
 		                            <p class="m-b-40">When it comes to searching for books, there is only one place to turn to – Book Hub.</p>
-		                            <p><a class="btn hvr-hover" href="#">Shop New</a></p>
+		                            <p><a class="btn hvr-hover" th:href="@{/shop/Tatca?page=1}">Shop New</a></p>
 		                        </div>
 		                    </div>
 		                </div>
@@ -45,7 +45,7 @@
 		                        <div class="col-md-12">
 		                            <h1 class="m-b-20"><strong>Welcome To <br> Book Hub</strong></h1>
 		                            <p class="m-b-40">When it comes to searching for books, there is only one place to turn to – Book Hub.</p>
-		                            <p><a class="btn hvr-hover" href="#">Shop New</a></p>
+		                            <p><a class="btn hvr-hover" th:href="@{/shop/Tatca?page=1}">Shop New</a></p>
 		                        </div>
 		                    </div>
 		                </div>
@@ -65,7 +65,7 @@
 		                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" th:each="category:${categories}">
 		                    <div class="shop-cat-box">
 		                        <img class="img-fluid" th:src="${category.image.url}" width="352px" length="352px" alt="" />
-		                        <a class="btn hvr-hover" href="#">[[${category.name}]]</a>
+		                        <a class="btn hvr-hover" th:href="@{${'/shop/'+category.getDomain() + '?page=1' }}">[[${category.name}]]</a>
 		                    </div>
 		                </div>		            
 		            </div>
@@ -114,8 +114,11 @@
 		                            </div>
 		                        </div>
 		                        <div class="why-text">
-		                            <h3><b>[[${item.title}]]</b></h3>
-		                            <h5><small>[[${item.price}]] VNĐ</small></h5>
+									<a th:href="@{/shop-detail(bookId=${item.id})}">
+										<h3><b>[[${item.title}]]</b></h3>
+		                            	<h5><small>[[${item.price}]] VNĐ</small></h5>
+									</a>
+		                            
 		                        </div>
 		                    </div>
 		                </div>
@@ -137,8 +140,10 @@
 		                            </div>
 		                        </div>
 		                        <div class="why-text">
-		                            <h3><b>[[${item.title}]]</b></h3>
-		                            <h5><small>[[${item.price}]] VNĐ</small></h5>
+									<a th:href="@{/shop-detail(bookId=${item.id})}">
+										<h3><b>[[${item.title}]]</b></h3>
+		                            	<h5><small>[[${item.price}]] VNĐ</small></h5>
+									</a>                  
 		                        </div>
 		                    </div>
 		                </div>
@@ -166,11 +171,13 @@
 		                        </div>
 		                        <div class="blog-content">
 		                            <div class="title-blog">
-		                                <h2 style="font-weight: 600;">[[${blog.title}]]</h2><br>
-		                                <h4 style="color: #d33b33; font-weight: 600;">[[${blog.subTitle}]]</h4><br>
-		                                <p class="collapse-content" >
-		                                   [[${blog.subTitle}]]
-		                                </p>
+		                                <a th:href="@{/blog/blog-detail(blogId=${blog.id})}">
+											<h2 style="font-weight: 600;">[[${blog.title}]]</h2><br>
+		                               		<h4 style="color: #d33b33; font-weight: 600;">[[${blog.subTitle}]]</h4><br>
+		                              		<p class="collapse-content" >
+		                                   	[[${blog.subTitle}]]
+		                                	</p>
+										</a>
 		                            </div>
 		                            <ul class="option-blog">
 		                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Likes"><i class="far fa-heart"></i></a></li>
