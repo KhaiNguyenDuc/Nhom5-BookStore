@@ -103,8 +103,8 @@
 		                            <div class="type-lb">
 		                                <p class="sale">Còn bán</p>
 		                            </div>
-		                            <img th:if ="${item.image.title}" th:src="@{${'/images/books/'+item.image.title}}" class="img-fluid" />
-									<img th:if ="${item.image.thumbnailName!=null && item.image.title == null }" th:src="@{${'/images/books/'+item.image.thumbnailName}}"
+		                            <img th:if ="${item.image.title}" th:src="@{${'/uploads/books/'+item.image.title}}" class="img-fluid" />
+									<img th:if ="${item.image.thumbnailName!=null && item.image.title == null }" th:src="@{${'/uploads/books/'+item.image.thumbnailName}}"
 									class="img-fluid"/>
 		                            <div class="mask-icon">
 		                                <ul>
@@ -129,8 +129,8 @@
 		                            <div class="type-lb">
 		                                <p class="sale">Còn bán</p>
 		                            </div>
-		                            <img th:if ="${item.image.title}" th:src="@{${'/images/books/'+item.image.title}}" class="img-fluid" />
-									<img th:if ="${item.image.thumbnailName!=null && item.image.title == null }" th:src="@{${'/images/books/'+item.image.thumbnailName}}"
+		                            <img th:if ="${item.image.title}" th:src="@{${'/uploads/books/'+item.image.title}}" class="img-fluid" />
+									<img th:if ="${item.image.thumbnailName!=null && item.image.title == null }" th:src="@{${'/uploads/books/'+item.image.thumbnailName}}"
 									class="img-fluid"/>
 		                            <div class="mask-icon">
 		                                <ul>
@@ -167,7 +167,7 @@
 		                <div th:each= "blog:${latestBlogs}" class="col-md-6 col-lg-4 col-xl-4">
 		                    <div class="blog-box">
 		                        <div class="blog-img">
-		                            <img class="img-fluid" th:src="@{${'/images/blogs/'+blog.image.title}}" alt="" />
+		                            <img class="img-fluid" th:src="@{${'/uploads/blogs/'+blog.image.title}}" alt="" />
 		                        </div>
 		                        <div class="blog-content">
 		                            <div class="title-blog">

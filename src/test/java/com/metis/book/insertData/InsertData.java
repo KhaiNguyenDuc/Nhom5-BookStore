@@ -165,43 +165,43 @@ public class InsertData {
 		// Create image Tieu Thuyet
 		Image image1 = new Image();
 		image1.setTitle("1.png");
-		image1.setUrl("images\\categories\\1.png");
+		image1.setUrl("uploads\\categories\\1.png");
 		imageRepository.save(image1);
 		
 		// Create image Ngon Tinh
 		Image image2 = new Image();
 		image2.setTitle("2.png");
-		image2.setUrl("images\\categories\\2.png");
+		image2.setUrl("uploads\\categories\\2.png");
 		imageRepository.save(image2);
 		
 		// Create image Ngon Tinh
 		Image image3 = new Image();
 		image3.setTitle("3.png");
-		image3.setUrl("images\\categories\\3.png");
+		image3.setUrl("uploads\\categories\\3.png");
 		imageRepository.save(image3);
 		
 		// Create image Cung đấu
 		Image image4 = new Image();
 		image4.setTitle("4.png");
-		image4.setUrl("images\\categories\\4.png");
+		image4.setUrl("uploads\\categories\\4.png");
 		imageRepository.save(image4);
 		
 		// Create image kinh te
 		Image image5 = new Image();
 		image5.setTitle("5.png");
-		image5.setUrl("images\\categories\\5.png");
+		image5.setUrl("uploads\\categories\\5.png");
 		imageRepository.save(image5);
 		
 		// Create image kinh te
 		Image image6 = new Image();
 		image6.setTitle("6.png");
-		image6.setUrl("images\\categories\\6.png");
+		image6.setUrl("uploads\\categories\\6.png");
 		imageRepository.save(image6);
 		
 		// Create image kinh te
 		Image image7 = new Image();
 		image7.setTitle("7.png");
-		image7.setUrl("images\\categories\\7.png");
+		image7.setUrl("uploads\\categories\\7.png");
 		imageRepository.save(image7);
 		
 		// Create category
@@ -430,7 +430,7 @@ public class InsertData {
 		// Create new Thumbnail for Book1
 		Image image1 = new Image();
 		image1.setTitle("1.png");
-		image1.setUrl("images\\books\\1.png");
+		image1.setUrl("uploads\\books\\1.png");
 		image1.setThumbnailName("BookThumbnail.png");
 		image1.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image1);
@@ -439,7 +439,7 @@ public class InsertData {
 		// Create new Thumbnail for Book2
 		Image image2 = new Image();
 		image2.setTitle("2.png");
-		image2.setUrl("images\\books\\2.png");
+		image2.setUrl("uploads\\books\\2.png");
 		image2.setThumbnailName("BookThumbnail.png");
 		image2.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image2);
@@ -447,7 +447,7 @@ public class InsertData {
 		// Create new Thumbnail for Book3
 		Image image3 = new Image();
 		image3.setTitle("3.png");
-		image3.setUrl("images\\books\\3.png");
+		image3.setUrl("uploads\\books\\3.png");
 		image3.setThumbnailName("BookThumbnail.png");
 		image3.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image3);
@@ -455,7 +455,7 @@ public class InsertData {
 		// Create new Thumbnail for Book4
 		Image image4 = new Image();
 		image4.setTitle("4.png");
-		image4.setUrl("images\\books\\4.png");
+		image4.setUrl("uploads\\books\\4.png");
 		image4.setThumbnailName("BookThumbnail.png");
 		image4.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image4);
@@ -463,7 +463,7 @@ public class InsertData {
 		// Create new Thumbnail for Book5
 		Image image5 = new Image();
 		image5.setTitle("5.png");
-		image5.setUrl("images\\books\\5.png");
+		image5.setUrl("uploads\\books\\5.png");
 		image5.setThumbnailName("BookThumbnail.png");
 		image5.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image5);
@@ -472,7 +472,7 @@ public class InsertData {
 		// Create new Thumbnail for Book6
 		Image image6 = new Image();
 		image6.setTitle("6.png");
-		image6.setUrl("images\\books\\6.png");
+		image6.setUrl("uploads\\books\\6.png");
 		image6.setThumbnailName("BookThumbnail.png");
 		image6.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image6);
@@ -480,7 +480,7 @@ public class InsertData {
 		// Create new Thumbnail for Book7
 		Image image7 = new Image();
 		image7.setTitle("7.png");
-		image7.setUrl("images\\books\\7.png");
+		image7.setUrl("uploads\\books\\7.png");
 		image7.setThumbnailName("BookThumbnail.png");
 		image7.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image7);
@@ -488,7 +488,7 @@ public class InsertData {
 		// Create new Thumbnail for Book8
 		Image image8 = new Image();
 		image8.setTitle("8.png");
-		image8.setUrl("images\\books\\8.png");
+		image8.setUrl("uploads\\books\\8.png");
 		image8.setThumbnailName("BookThumbnail.png");
 		image8.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image8);
@@ -496,7 +496,7 @@ public class InsertData {
 		// Create new Thumbnail for Book9
 		Image image9 = new Image();
 		image9.setTitle("9.png");
-		image9.setUrl("images\\books\\9.png");
+		image9.setUrl("uploads\\books\\9.png");
 		image9.setThumbnailName("BookThumbnail.png");
 		image9.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image9);
@@ -504,7 +504,7 @@ public class InsertData {
 		// Create new Thumbnail for Book10
 		Image image10 = new Image();
 		image10.setTitle("10.png");
-		image10.setUrl("images\\books\\10.png");
+		image10.setUrl("uploads\\books\\10.png");
 		image10.setThumbnailName("BookThumbnail.png");
 		image10.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BookThumbnail.png");
 		imageRepository.save(image10);
@@ -878,7 +878,7 @@ public class InsertData {
 		Blog blog2 = new Blog();
 		blog2.setTitle("Review sách Xin đổi tổn thương lấy trưởng thành");
 		blog2.setSubTitle("Xin đổi tổn thương lấy trưởng thành - cuốn sách giúp bạn lấy lại tinh thần sau những ngày chán nản với trọng trách gánh vác trên vai “người trưởng thành”. Lý Ái Linh sẽ giúp bạn nhận ra đôi khi chịu tổn thương không phải là xấu, nếu tổn thương ấy giúp chúng ta trưởng thành thì bạn hãy cảm ơn vì tổn thương ấy khiến bạn mạnh mẽ hơn.");
-		blog2.setContent("<h2 style=\"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 12px 0px 8px; overflow: hidden; font-size: 18px; line-height: 28px; color: rgb(17, 17, 17); font-family: Roboto; background-color: rgb(252, 250, 246);\">Cảm nhận sách&nbsp;Xin đổi tổn thương lấy trưởng thành</h2><div>Dù muốn hay không thì ai rồi cũng bắt buộc phải trưởng thành thế nhưng không phải ai cũng chấp nhận được sự thay đổi nhanh chóng của thời gian. Chúng ta buồn vì khi lớn lên rồi, được thoải mái làm điều mình thích nhưng chính chúng ta lại cô đơn đến thế. Liệu phải chịu bao nhiêu tổn thương mới có thể trưởng thành? Nếu muốn biết đáp án mời bạn cùng đọc cuốn sách này nhé!</div><div>Không có bất cứ thành công nào từ trên trời rơi xuống, nếu không phải đánh đổi bằng mồ hôi nước mắt thì sẽ đánh đổi bằng rất nhiều mồ hôi nước mắt. Thế nhưng trên cuộc hành trình ấy bạn không hề cô đơn vì xung quanh chúng ta có rất nhiều người đã và đang cố gắng mỗi ngày như thế. Tuổi trẻ ấy mà, ai chẳng phải trải qua những tháng ngày mệt mỏi không biết nên làm thế nào để vượt qua. Vậy mà bằng một cách nào đó sau này khi nhìn lại chúng ta lại không cảm thấy có chút mệt mỏi nào. Tất cả chỉ là thử thách, bạn kiên trì ắt sẽ được đền đáp.</div><div><div>Trên đời này lấy đâu ra nhiều thứ đồ tốt tự đến tay bạn vậy? Một bữa cơm miễn phí cũng chẳng có lấy đâu ra hạnh phúc tự tìm đến chúng ta. Muốn có một cuộc sống bình dị, hạnh phúc thì người cố gắng không ai khác phải là bạn. Muốn có được thành công người nỗ lực cũng chính là bạn. Bởi chẳng có ai có thể mang lại cho bạn ngoại trừ bản thân. Khi đã trải qua đủ loại bão giông mà cuộc đời mang đến tự nhiên bạn sẽ mạnh mẽ hơn mà không cần phải dựa dẫm vào bất cứ người nào.</div><div>Nếu bạn đang đứng giữa ngã tư đường của tuổi trẻ, bạn không biết mình nên tiến hay lùi vậy thì cuốn sách này dành cho bạn, nó sẽ giúp bạn trưởng thành hơn. Là con gái chúng ta nhất định không được bánh bèo, yếu đuối bởi sự yếu đuối của bạn không phải là lý do để cuộc sống đối xử nhẹ nhàng với bạn. Không ai là trường hợp ngoại lệ, khó khăn vẫn luôn ở đó, trong các giai đoạn sẽ có những mỏi mệt nhất định. Bạn phải kiên cường hơn nữa, muốn có được thành công chúng ta phải kiên trì.</div></div><div><div>Cuốn sách&nbsp;<a href=\"https://www.reader.com.vn/review-sach-xin-doi-ton-thuong-lay-truong-thanh-a865.html\" style=\"margin: 0px; padding: 0px; color: rgb(232, 145, 38);\"><strong style=\"margin: 0px; padding: 0px;\">Xin đổi tổn thương lấy trưởng thành của Lý Ái Linh</strong></a>&nbsp;giống như đang lật mở từng trang nhật ký cuộc đời của chúng ta vậy. Qua từng trang sách chúng ta như được nhìn thấy bản thân, giúp bạn hiểu rõ hơn về chính mình, sống thật với cảm xúc của mình. Từ những câu chuyện, bài học tạo động lực cho chúng ta thay đổi và trở thành phiên bản tốt nhất của chính mình.</div><div><img alt=\"Cảm nhận sách Xin đổi tổn thương lấy trưởng thành\" src=\"https://www.reader.com.vn/uploads/images/xin-doi-ton-thuong-lay-truong-thanh-2.jpeg\" style=\"margin: 0px; padding: 0px; border-width: initial; border-color: initial; border-image: initial; max-width: 100%; height: 468px; width: 640px;\"></div><div>Phải trải qua cơn đau dai dẳng của những mối tình đơn phương chúng ta mới chợt nhận ra chuyện tình yêu đôi khi khó hiểu lắm. Rõ ràng biết đâm đâu vào sẽ nhận về mình những tổn thương vậy mà vẫn can tâm tình nguyện đâm đầu vào. Đến một giai đoạn khi bạn đã đi làm, bạn bị những áp lực bủa vây rồi bạn sẽ nhận ra chẳng có gì quý giá hơn bản thân.</div><div><em style=\"margin: 0px; padding: 0px;\">“Tất cả những tổn thương rồi sẽ được chữa lành theo thời gian, lớp vảy bong ra lưu lại lớp da non hồng nhạt, đó là vết tích đánh dấu ta đã từng đau. Chúng ta dẫn nguồn bằng nhiệt huyết, tự do bay nhảy trên cánh đồng, để vết thương nở hoa, biến thành một tấm huy chương tượng trưng cho tìn yêu trong cuộc đời này.”</em></div></div><div><em style=\"margin: 0px; padding: 0px;\"><div>Một ngày bạn chạy ngược chạy xuôi làm đủ mọi thứ chuyện trên đời vậy mà không nhận được bất cứ lời tán dương từ người khác, bạn nhận ra bản thân bạn đã quá đủ mệt mỏi để quan sát ánh mắt của người khác nhìn bạn, bạn cũng chẳng muốn đau đầu dò đoán xem họ nghĩ gì về mình nữa rồi. Lúc này một giấc ngủ mới khiến bạn có năng lượng trở lại. Vậy thì đừng quan tâm đến thế giới, bản thân bạn mới quan trọng, ngủ một giấc sau đó thức dậy tiếp tục làm tốt công việc của mình.</div><div>Trưởng thành rồi chúng ta cần phải học cách kiềm chế cảm xúc của bản thân, không phải lúc nào muốn làm loạn cũng được. Một lúc nào đó khi bạn quá mệt mỏi rồi hãy để bản thân nghỉ ngơi một cách tốt nhất, lúc nào còn năng lượng thì hãy chiến đấu hết mình. Chúng ta còn trẻ, chúng ta còn thời gian để nỗ lực, đừng để sau này lúc về già mới bắt đầu thấy hối hận vì lúc trẻ đã không nỗ lực hết mình. Kinh nghiệm mà chúng ta học được sau những lần tổn thương rất quý giá vậy nên bạn nhất định phải trải nghiệm thật nhiều.</div><div><h3 style=\"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 12px 0px 8px; overflow: hidden; font-size: 18px; line-height: 28px; color: rgb(17, 17, 17); font-family: Roboto; font-style: normal; background-color: rgb(252, 250, 246);\"><strong style=\"margin: 0px; padding: 0px;\">Trích dẫn hay trong sách&nbsp;</strong>Xin đổi tổn thương lấy trưởng thành</h3><div>Trưởng thành là quá trình để bạn nhìn nhận lại bản thân và thử thách lòng dũng cảm, dù cho cuộc sống này có bất ngờ sụp đổ hay đẩy bạn rơi vào tình cảnh tuyệt vọng. Không có gì dễ dàng vứt bỏ, cũng chẳng có gì không thể thay thế. Sự tệ bạc và phản bội mà chúng ta đã từng nếm trải chẳng qua đều là những bài kiểm tra đúng thời điểm mà tạo hóa đã ban tặng. Lấy nỗi đau trong chốc lát đổi thành sự sáng suốt vĩnh cửu.</div><div>Những câu chuyện đẹp vẫn luôn diễn ra một cách chậm rãi, tình yêu sâu đậm vẫn luôn chảy dài như dòng nước tĩnh lặng. Mọi tình yêu trên đời đều xứng đáng được lưu giữ và trân trọng. Tất cả những điều tốt đẹp đều xứng đáng được khắc ghi.</div></div><div><span style=\"color: rgb(17, 17, 17); font-family: Roboto; font-style: normal; background-color: rgb(252, 250, 246);\">“Hãy sống như những gì bạn nghĩ, chứ đừng nghĩ như những gì bạn sống.” Rồi sẽ có một ngày chuyến tàu ấy sẽ đến, bạn xứng đáng yêu và được yêu.</span><br></div><div><h3 style=\"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 12px 0px 8px; overflow: hidden; font-size: 18px; line-height: 28px; color: rgb(17, 17, 17); font-family: Roboto; font-style: normal; background-color: rgb(252, 250, 246);\"><strong style=\"margin: 0px; padding: 0px;\">Lời kết</strong></h3><div>“Chúc cho tất cả những người con gái chân thành và đam mê trong tình yêu, trưởng thành hơn nhờ vào sai lầm, hãy yêu đúng cách để tình yêu được tỏa sáng.”</div><div>Cảm ơn mọi người đã đọc hết bài review của mình. Hy vọng rằng những chia sẻ của mình có thể giúp ích các bạn trong việc lựa chọn cuốn sách phù hợp với bản thân. Chúc các bạn đọc sách vui vẻ. Thân!</div></div></em></div>");
+		blog2.setContent("<h2 style=\"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 12px 0px 8px; overflow: hidden; font-size: 18px; line-height: 28px; color: rgb(17, 17, 17); font-family: Roboto; background-color: rgb(252, 250, 246);\">Cảm nhận sách&nbsp;Xin đổi tổn thương lấy trưởng thành</h2><div>Dù muốn hay không thì ai rồi cũng bắt buộc phải trưởng thành thế nhưng không phải ai cũng chấp nhận được sự thay đổi nhanh chóng của thời gian. Chúng ta buồn vì khi lớn lên rồi, được thoải mái làm điều mình thích nhưng chính chúng ta lại cô đơn đến thế. Liệu phải chịu bao nhiêu tổn thương mới có thể trưởng thành? Nếu muốn biết đáp án mời bạn cùng đọc cuốn sách này nhé!</div><div>Không có bất cứ thành công nào từ trên trời rơi xuống, nếu không phải đánh đổi bằng mồ hôi nước mắt thì sẽ đánh đổi bằng rất nhiều mồ hôi nước mắt. Thế nhưng trên cuộc hành trình ấy bạn không hề cô đơn vì xung quanh chúng ta có rất nhiều người đã và đang cố gắng mỗi ngày như thế. Tuổi trẻ ấy mà, ai chẳng phải trải qua những tháng ngày mệt mỏi không biết nên làm thế nào để vượt qua. Vậy mà bằng một cách nào đó sau này khi nhìn lại chúng ta lại không cảm thấy có chút mệt mỏi nào. Tất cả chỉ là thử thách, bạn kiên trì ắt sẽ được đền đáp.</div><div><div>Trên đời này lấy đâu ra nhiều thứ đồ tốt tự đến tay bạn vậy? Một bữa cơm miễn phí cũng chẳng có lấy đâu ra hạnh phúc tự tìm đến chúng ta. Muốn có một cuộc sống bình dị, hạnh phúc thì người cố gắng không ai khác phải là bạn. Muốn có được thành công người nỗ lực cũng chính là bạn. Bởi chẳng có ai có thể mang lại cho bạn ngoại trừ bản thân. Khi đã trải qua đủ loại bão giông mà cuộc đời mang đến tự nhiên bạn sẽ mạnh mẽ hơn mà không cần phải dựa dẫm vào bất cứ người nào.</div><div>Nếu bạn đang đứng giữa ngã tư đường của tuổi trẻ, bạn không biết mình nên tiến hay lùi vậy thì cuốn sách này dành cho bạn, nó sẽ giúp bạn trưởng thành hơn. Là con gái chúng ta nhất định không được bánh bèo, yếu đuối bởi sự yếu đuối của bạn không phải là lý do để cuộc sống đối xử nhẹ nhàng với bạn. Không ai là trường hợp ngoại lệ, khó khăn vẫn luôn ở đó, trong các giai đoạn sẽ có những mỏi mệt nhất định. Bạn phải kiên cường hơn nữa, muốn có được thành công chúng ta phải kiên trì.</div></div><div><div>Cuốn sách&nbsp;<a href=\"https://www.reader.com.vn/review-sach-xin-doi-ton-thuong-lay-truong-thanh-a865.html\" style=\"margin: 0px; padding: 0px; color: rgb(232, 145, 38);\"><strong style=\"margin: 0px; padding: 0px;\">Xin đổi tổn thương lấy trưởng thành của Lý Ái Linh</strong></a>&nbsp;giống như đang lật mở từng trang nhật ký cuộc đời của chúng ta vậy. Qua từng trang sách chúng ta như được nhìn thấy bản thân, giúp bạn hiểu rõ hơn về chính mình, sống thật với cảm xúc của mình. Từ những câu chuyện, bài học tạo động lực cho chúng ta thay đổi và trở thành phiên bản tốt nhất của chính mình.</div><div><img alt=\"Cảm nhận sách Xin đổi tổn thương lấy trưởng thành\" src=\"https://www.reader.com.vn/uploads/uploads/xin-doi-ton-thuong-lay-truong-thanh-2.jpeg\" style=\"margin: 0px; padding: 0px; border-width: initial; border-color: initial; border-image: initial; max-width: 100%; height: 468px; width: 640px;\"></div><div>Phải trải qua cơn đau dai dẳng của những mối tình đơn phương chúng ta mới chợt nhận ra chuyện tình yêu đôi khi khó hiểu lắm. Rõ ràng biết đâm đâu vào sẽ nhận về mình những tổn thương vậy mà vẫn can tâm tình nguyện đâm đầu vào. Đến một giai đoạn khi bạn đã đi làm, bạn bị những áp lực bủa vây rồi bạn sẽ nhận ra chẳng có gì quý giá hơn bản thân.</div><div><em style=\"margin: 0px; padding: 0px;\">“Tất cả những tổn thương rồi sẽ được chữa lành theo thời gian, lớp vảy bong ra lưu lại lớp da non hồng nhạt, đó là vết tích đánh dấu ta đã từng đau. Chúng ta dẫn nguồn bằng nhiệt huyết, tự do bay nhảy trên cánh đồng, để vết thương nở hoa, biến thành một tấm huy chương tượng trưng cho tìn yêu trong cuộc đời này.”</em></div></div><div><em style=\"margin: 0px; padding: 0px;\"><div>Một ngày bạn chạy ngược chạy xuôi làm đủ mọi thứ chuyện trên đời vậy mà không nhận được bất cứ lời tán dương từ người khác, bạn nhận ra bản thân bạn đã quá đủ mệt mỏi để quan sát ánh mắt của người khác nhìn bạn, bạn cũng chẳng muốn đau đầu dò đoán xem họ nghĩ gì về mình nữa rồi. Lúc này một giấc ngủ mới khiến bạn có năng lượng trở lại. Vậy thì đừng quan tâm đến thế giới, bản thân bạn mới quan trọng, ngủ một giấc sau đó thức dậy tiếp tục làm tốt công việc của mình.</div><div>Trưởng thành rồi chúng ta cần phải học cách kiềm chế cảm xúc của bản thân, không phải lúc nào muốn làm loạn cũng được. Một lúc nào đó khi bạn quá mệt mỏi rồi hãy để bản thân nghỉ ngơi một cách tốt nhất, lúc nào còn năng lượng thì hãy chiến đấu hết mình. Chúng ta còn trẻ, chúng ta còn thời gian để nỗ lực, đừng để sau này lúc về già mới bắt đầu thấy hối hận vì lúc trẻ đã không nỗ lực hết mình. Kinh nghiệm mà chúng ta học được sau những lần tổn thương rất quý giá vậy nên bạn nhất định phải trải nghiệm thật nhiều.</div><div><h3 style=\"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 12px 0px 8px; overflow: hidden; font-size: 18px; line-height: 28px; color: rgb(17, 17, 17); font-family: Roboto; font-style: normal; background-color: rgb(252, 250, 246);\"><strong style=\"margin: 0px; padding: 0px;\">Trích dẫn hay trong sách&nbsp;</strong>Xin đổi tổn thương lấy trưởng thành</h3><div>Trưởng thành là quá trình để bạn nhìn nhận lại bản thân và thử thách lòng dũng cảm, dù cho cuộc sống này có bất ngờ sụp đổ hay đẩy bạn rơi vào tình cảnh tuyệt vọng. Không có gì dễ dàng vứt bỏ, cũng chẳng có gì không thể thay thế. Sự tệ bạc và phản bội mà chúng ta đã từng nếm trải chẳng qua đều là những bài kiểm tra đúng thời điểm mà tạo hóa đã ban tặng. Lấy nỗi đau trong chốc lát đổi thành sự sáng suốt vĩnh cửu.</div><div>Những câu chuyện đẹp vẫn luôn diễn ra một cách chậm rãi, tình yêu sâu đậm vẫn luôn chảy dài như dòng nước tĩnh lặng. Mọi tình yêu trên đời đều xứng đáng được lưu giữ và trân trọng. Tất cả những điều tốt đẹp đều xứng đáng được khắc ghi.</div></div><div><span style=\"color: rgb(17, 17, 17); font-family: Roboto; font-style: normal; background-color: rgb(252, 250, 246);\">“Hãy sống như những gì bạn nghĩ, chứ đừng nghĩ như những gì bạn sống.” Rồi sẽ có một ngày chuyến tàu ấy sẽ đến, bạn xứng đáng yêu và được yêu.</span><br></div><div><h3 style=\"margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 12px 0px 8px; overflow: hidden; font-size: 18px; line-height: 28px; color: rgb(17, 17, 17); font-family: Roboto; font-style: normal; background-color: rgb(252, 250, 246);\"><strong style=\"margin: 0px; padding: 0px;\">Lời kết</strong></h3><div>“Chúc cho tất cả những người con gái chân thành và đam mê trong tình yêu, trưởng thành hơn nhờ vào sai lầm, hãy yêu đúng cách để tình yêu được tỏa sáng.”</div><div>Cảm ơn mọi người đã đọc hết bài review của mình. Hy vọng rằng những chia sẻ của mình có thể giúp ích các bạn trong việc lựa chọn cuốn sách phù hợp với bản thân. Chúc các bạn đọc sách vui vẻ. Thân!</div></div></em></div>");
 		blog2.setImage(imageThumbnail2);
 		blogRepository.save(blog2);
 
@@ -941,7 +941,7 @@ public class InsertData {
 		// Create new Image
 		Image imageThumbnail = new Image();
 		imageThumbnail.setTitle("2.png");
-		imageThumbnail.setUrl("images\\users\\2.png");
+		imageThumbnail.setUrl("uploads\\users\\2.png");
 		imageThumbnail.setThumbnailName("avtThumbnail.jpg");
 		imageThumbnail.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\avtThumbnail.png");
 		imageRepository.save(imageThumbnail);
@@ -981,7 +981,7 @@ public class InsertData {
 		// Create new Image
 		Image imageThumbnail = new Image();
 		imageThumbnail.setTitle("1.png");
-		imageThumbnail.setUrl("images\\users\\1.png");
+		imageThumbnail.setUrl("uploads\\users\\1.png");
 		imageThumbnail.setThumbnailName("avtThumbnail.png");
 		imageThumbnail.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\avtThumbnail.png");
 		imageRepository.save(imageThumbnail);
