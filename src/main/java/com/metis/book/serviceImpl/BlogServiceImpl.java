@@ -18,6 +18,7 @@ import com.metis.book.dto.PageResponse;
 import com.metis.book.model.Blog;
 import com.metis.book.model.Image;
 import com.metis.book.repository.BlogRepository;
+import com.metis.book.repository.BookRepository;
 import com.metis.book.repository.ImageRepository;
 import com.metis.book.service.IBlogService;
 import com.metis.book.utils.AppConstant;
@@ -34,6 +35,9 @@ public class BlogServiceImpl implements IBlogService {
 	
 	@Autowired
 	ImageRepository imageRepository;
+	
+	@Autowired
+	BookRepository bookRepository;
 	
 	@Override
 	public List<Blog> getAllBlogs(){
@@ -53,6 +57,11 @@ public class BlogServiceImpl implements IBlogService {
 		blog.setTitle(blogForm.getTitle());
 		blog.setSubTitle(blogForm.getSubTitle());
 		blog.setContent(blogForm.getContent());
+		
+		
+		if(!blogForm.getBook().equals("-1")) {
+			blog.setBook(bookRepository.findById(Long.parseLong(blogForm.getBook())).get());
+		}
 		
 		Blog blogSaved = blogRepository.save(blog);
 		
