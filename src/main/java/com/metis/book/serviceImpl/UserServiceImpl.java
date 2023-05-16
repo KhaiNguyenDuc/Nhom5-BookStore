@@ -259,7 +259,6 @@ public class UserServiceImpl implements IUserService {
 		}
 
 		
-		
 		address.setDistrict(profileForm.getDistrict());
 		address.setSubDistrict(profileForm.getSubDistrict());
 		address.setProvince(profileForm.getProvince());
