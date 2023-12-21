@@ -1,1 +1,30 @@
+name: Run Tests and Calculate Coverage
 
+on:
+  push:
+    branches:
+      - main  # You can change this to your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # You can choose a different runner if needed
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: 11  # You can choose a different Java version
+
+      - name: Build and Test
+        run: |
+          mvn clean install
+          mvn test
+
+      - name: Calculate Coverage
+        run: |
+          mvn jacoco:prepare-agent test jacoco:report
+
+   
