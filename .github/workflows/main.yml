@@ -1,3 +1,9 @@
+name: Run Tests and Calculate Coverage
+
+on:
+  push:
+    branches:
+      - main  # You can change this to your main branch name
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,3 +30,4 @@ jobs:
         with:
           name: Test case Report
           path: target/site/
+
