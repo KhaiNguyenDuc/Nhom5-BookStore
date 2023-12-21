@@ -32,64 +32,63 @@ public class BlogServiceImpl implements IBlogService {
 
 	@Autowired
 	BlogRepository blogRepository;
-	
+
 	@Autowired
 	ImageRepository imageRepository;
-	
+
 	@Autowired
 	BookRepository bookRepository;
-	
+
 	@Override
-	public List<Blog> getAllBlogs(){
+	public List<Blog> getAllBlogs() {
 		return blogRepository.findAll();
 	}
 
 	@Override
 	public void deleteById(Long blogId) {
 		blogRepository.deleteById(blogId);
-		
 	}
 
 	@Override
 	public void addBlog(BlogForm blogForm) throws IOException {
-		
+
 		Blog blog = new Blog();
 		blog.setTitle(blogForm.getTitle());
 		blog.setSubTitle(blogForm.getSubTitle());
 		blog.setContent(blogForm.getContent());
-		
-		
-		if(!blogForm.getBook().equals("-1")) {
+
+		if (!blogForm.getBook().equals("-1")) {
 			blog.setBook(bookRepository.findById(Long.parseLong(blogForm.getBook())).get());
 		}
-		
+
 		Blog blogSaved = blogRepository.save(blog);
-		
-		if(!blogForm.getFile().isEmpty()) {
-			Path fileNameAndPath = FileUploadUtils.saveBlogImage(blogForm.getFile(),blogSaved.getId());
+
+		if (!blogForm.getFile().isEmpty()) {
+			Path fileNameAndPath = FileUploadUtils.saveBlogImage(blogForm.getFile(), blogSaved.getId());
 			Image image = new Image();
-			image.setTitle(blogSaved.getId().toString()+".png");
+			image.setTitle(blogSaved.getId().toString() + ".png");
 			image.setUrl(fileNameAndPath.toString());
 			Image imageSaved = imageRepository.save(image);
 			blogSaved.setImage(imageSaved);
 			blogRepository.save(blogSaved);
-		}else {
+		} else {
 			// Create thumbnail image 1
 			Image imageThumbnail = new Image();
 			imageThumbnail.setThumbnailName("BlogThumbnail.png");
-			imageThumbnail.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BlogThumbnail.png");
+			imageThumbnail
+					.setThumbnailURL("E:\\HCMUTE\\School_Project\\bookstore_MetisBook\\uploads\\BlogThumbnail.png");
 			imageRepository.save(imageThumbnail);
 			blogSaved.setImage(imageThumbnail);
 			blogRepository.save(blogSaved);
 		}
-		
+
 	}
 
 	@Override
 	public Blog getById(Long blogId) {
 		Blog blog = blogRepository.findById(blogId).get();
-		if(Objects.isNull(blog)) {
-			log.error(AppConstant.BLOG_NOT_FOUND+blogId);
+		if (Objects.isNull(blog)) {
+			log.error(AppConstant.BLOG_NOT_FOUND + blogId);
 		}
 		return blog;
 	}
@@ -100,20 +99,20 @@ public class BlogServiceImpl implements IBlogService {
 		log.error(System.getProperty("user.dir"));
 		Long blogId = Long.parseLong(blogForm.getId());
 		Blog blog = blogRepository.findById(blogId).get();
-		if(Objects.isNull(blog)) {
-			log.error(AppConstant.BLOG_NOT_FOUND+blogId);
+		if (Objects.isNull(blog)) {
+			log.error(AppConstant.BLOG_NOT_FOUND + blogId);
 			return;
 		}
-		
+
 		blog.setTitle(blogForm.getTitle());
 		blog.setSubTitle(blogForm.getSubTitle());
 		blog.setContent(blogForm.getContent());
 		Blog blogSaved = blogRepository.save(blog);
-		
-		if(!Objects.isNull(blogForm.getFile())) {
-			Path fileNameAndPath = FileUploadUtils.saveBlogImage(blogForm.getFile(),blogSaved.getId());
+
+		if (!Objects.isNull(blogForm.getFile())) {
+			Path fileNameAndPath = FileUploadUtils.saveBlogImage(blogForm.getFile(), blogSaved.getId());
 			Image image = new Image();
-			image.setTitle(blogSaved.getId().toString()+".png");
+			image.setTitle(blogSaved.getId().toString() + ".png");
 			image.setUrl(fileNameAndPath.toString());
 			Image imageSaved = imageRepository.save(image);
 			blogSaved.setImage(imageSaved);
@@ -124,7 +123,7 @@ public class BlogServiceImpl implements IBlogService {
 	@Override
 	public void updateImage(MultipartFile file) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -132,7 +131,7 @@ public class BlogServiceImpl implements IBlogService {
 		List<Blog> blogs = blogRepository.findAll();
 		List<Blog> lastestBlogs = new ArrayList<>();
 		int index = Math.min(3, blogs.size());
-		for(int i = 0; i < index; i++) {
+		for (int i = 0; i < index; i++) {
 			lastestBlogs.add(blogs.get(i));
 		}
 		return lastestBlogs;
