@@ -5,19 +5,18 @@ import com.metis.book.model.Author;
 import com.metis.book.repository.AuthorRepository;
 import com.metis.book.repository.UserRepository;
 import com.metis.book.serviceImpl.AuthorServiceImpl;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Collections;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
+import org.junit.Before;
+import org.mockito.MockitoAnnotations;
 
-@ExtendWith(MockitoExtension.class)
 public class AuthorServiceImplTest {
 
     @Mock
@@ -28,6 +27,11 @@ public class AuthorServiceImplTest {
 
     @InjectMocks
     private AuthorServiceImpl authorService;
+
+    @Before
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
+    }
 
     @Test
     public void testGetAllAuthors() {
@@ -44,8 +48,6 @@ public class AuthorServiceImplTest {
 
         verify(authorRepository, times(1)).save(any(Author.class));
     }
-
-
 
     @Test
     public void testGetById() {

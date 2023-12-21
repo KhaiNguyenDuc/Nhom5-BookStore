@@ -1,6 +1,6 @@
 package com.metis.book;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 import java.util.Arrays;
@@ -8,17 +8,17 @@ import java.util.List;
 import java.util.Optional;
 
 import com.metis.book.serviceImpl.ContactServiceImpl;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import com.metis.book.model.Contact;
 import com.metis.book.repository.ContactRepository;
 
-@ExtendWith(MockitoExtension.class)
-class ContactServiceImplTest {
+@RunWith(MockitoJUnitRunner.class)
+public class ContactServiceImplTest {
 
     @Mock
     private ContactRepository contactRepository;
@@ -27,7 +27,7 @@ class ContactServiceImplTest {
     private ContactServiceImpl contactService;
 
     @Test
-    void testGetAllContacts() {
+    public void testGetAllContacts() {
         // Mock data
         Contact contact1 = new Contact();
         contact1.setId(1L);
@@ -47,7 +47,7 @@ class ContactServiceImplTest {
     }
 
     @Test
-    void testInsertContact() {
+    public void testInsertContact() {
         // Mock data
         Contact contact = new Contact();
         contact.setId(1L);
@@ -61,7 +61,7 @@ class ContactServiceImplTest {
     }
 
     @Test
-    void testDeleteById() {
+    public void testDeleteById() {
         // Mock data
         long contactId = 1L;
 
@@ -73,7 +73,7 @@ class ContactServiceImplTest {
     }
 
     @Test
-    void testGetById() {
+    public void testGetById() {
         // Mock data
         long contactId = 1L;
         Contact contact = new Contact();
@@ -89,7 +89,7 @@ class ContactServiceImplTest {
     }
 
     @Test
-    void testEditContact() {
+    public void testEditContact() {
         // Mock data
         Contact contact = new Contact();
         contact.setId(1L);

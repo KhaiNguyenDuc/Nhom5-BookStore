@@ -8,7 +8,16 @@ import org.junit.runners.Suite;
     AddressServiceTest.class,
     CartItemServiceTest.class,
     BookServiceTest.class,
-    LanguageServiceTest.class
+    LanguageServiceTest.class,
+    OrderServiceImplTest.class,
+    OrderTrackServiceImplTest.class,
+    PasswordResetTokenServiceImplTest.class,
+    UserServiceImplTest.class,
+    VerificationTokenServiceImplTest.class,
+    AuthorServiceImplTest.class,
+    BookRequestImplTest.class,
+    ContactServiceImplTest.class,
+    FeedbackServiceImplTest.class
     // Thêm các lớp kiểm thử khác nếu cần
 })
 public class TestSuite {
