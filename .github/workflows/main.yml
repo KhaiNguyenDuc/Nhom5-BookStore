@@ -15,11 +15,15 @@ jobs:
         run: mvn clean test
 
       - name: Generate JaCoCo Coverage Report
-        run: mvn jacoco:report
+        run: mvn surefire-report:report
+
+#      - name: Generate JaCoCo Coverage Report
+#        run: mvn jacoco:report
+
 
       - name: Upload Coverage Report
         uses: actions/upload-artifact@v3
         if: success() || failure()
         with:
           name: JaCoCo Coverage Report
-          path: target/site/jacoco/  # Path where JaCoCo reports are generated
+          path: target/site/  # Path where JaCoCo reports are generated
