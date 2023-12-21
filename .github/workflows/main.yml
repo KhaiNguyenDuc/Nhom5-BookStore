@@ -12,18 +12,15 @@ jobs:
           cache: maven
 
       - name: Test with Maven
-        run: mvn clean test
+        run: mvn site
 
-      - name: Generate JaCoCo Coverage Report
-        run: mvn surefire-report:report
-
-#      - name: Generate JaCoCo Coverage Report
-#        run: mvn jacoco:report
+      - name: Generate Test case Report
+        run: mvn surefire-report:report-only
 
 
       - name: Upload Coverage Report
         uses: actions/upload-artifact@v3
         if: success() || failure()
         with:
-          name: JaCoCo Coverage Report
-          path: target/site/  # Path where JaCoCo reports are generated
+          name: Test case Report
+          path: target/site/

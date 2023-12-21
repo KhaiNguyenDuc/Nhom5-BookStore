@@ -125,43 +125,44 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-report-plugin</artifactId>
 				<version>3.0.0-M5</version> <!-- Use the appropriate version -->
+
 			</plugin>
 			<!-- JaCoCo plugin -->
-			<plugin>
-				<groupId>org.jacoco</groupId>
-				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.7</version> <!-- Use the latest version -->
-				<executions>
-					<execution>
-						<goals>
-							<goal>prepare-agent</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>report</id>
-						<phase>test</phase>
-						<goals>
-							<goal>report</goal>
-						</goals>
-					</execution>
+<!--			<plugin>-->
+<!--				<groupId>org.jacoco</groupId>-->
+<!--				<artifactId>jacoco-maven-plugin</artifactId>-->
+<!--				<version>0.8.7</version> &lt;!&ndash; Use the latest version &ndash;&gt;-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<goals>-->
+<!--							<goal>prepare-agent</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--					<execution>-->
+<!--						<id>report</id>-->
+<!--						<phase>test</phase>-->
+<!--						<goals>-->
+<!--							<goal>report</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
 
-				</executions>
-				<configuration>
-					<excludes>
-						<exclude>com/metis/book/config/**</exclude>
-						<exclude>com/metis/book/controller/**</exclude>
-						<exclude>com/metis/book/dto/**</exclude>
-						<exclude>com/metis/book/event/**</exclude>
-						<exclude>com/metis/book/exception/**</exclude>
-						<exclude>com/metis/book/model/**</exclude>
-						<exclude>com/metis/book/security/**</exclude>
-						<exclude>com/metis/book/utils/**</exclude>
-						<exclude>com/metis/book/validation/**</exclude>
-						<exclude>com/metis/book/repository/**</exclude>
-						<!-- More classes can be excluded as needed -->
-					</excludes>
-				</configuration>
-			</plugin>
+<!--				</executions>-->
+<!--				<configuration>-->
+<!--					<excludes>-->
+<!--						<exclude>com/metis/book/config/**</exclude>-->
+<!--						<exclude>com/metis/book/controller/**</exclude>-->
+<!--						<exclude>com/metis/book/dto/**</exclude>-->
+<!--						<exclude>com/metis/book/event/**</exclude>-->
+<!--						<exclude>com/metis/book/exception/**</exclude>-->
+<!--						<exclude>com/metis/book/model/**</exclude>-->
+<!--						<exclude>com/metis/book/security/**</exclude>-->
+<!--						<exclude>com/metis/book/utils/**</exclude>-->
+<!--						<exclude>com/metis/book/validation/**</exclude>-->
+<!--						<exclude>com/metis/book/repository/**</exclude>-->
+<!--						&lt;!&ndash; More classes can be excluded as needed &ndash;&gt;-->
+<!--					</excludes>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 		</plugins>
 	</build>
 
