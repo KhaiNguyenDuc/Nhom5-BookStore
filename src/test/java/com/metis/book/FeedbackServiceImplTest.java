@@ -1,6 +1,6 @@
 package com.metis.book;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 import java.util.Arrays;
@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.Optional;
 
 import com.metis.book.serviceImpl.FeedbackServiceImpl;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import com.metis.book.model.Book;
 import com.metis.book.model.Feedback;
@@ -20,9 +20,11 @@ import com.metis.book.model.user.User;
 import com.metis.book.repository.BookRepository;
 import com.metis.book.repository.FeedbackRepository;
 import com.metis.book.repository.UserRepository;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@ExtendWith(MockitoExtension.class)
-class FeedbackServiceImplTest {
+@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest(properties = "spring.config.name=application-test")
+public class FeedbackServiceImplTest {
 
     @Mock
     private FeedbackRepository feedbackRepository;
@@ -37,7 +39,7 @@ class FeedbackServiceImplTest {
     private FeedbackServiceImpl feedbackService;
 
     @Test
-    void testSaveFeedback() {
+    public void testSaveFeedback() {
         // Mock data
         Long userId = 1L;
         Long bookId = 2L;
@@ -64,7 +66,7 @@ class FeedbackServiceImplTest {
     }
 
     @Test
-    void testGetFeedbacksById() {
+    public void testGetFeedbacksById() {
         // Mock data
         Long bookId = 1L;
         Book book = new Book();
@@ -90,7 +92,7 @@ class FeedbackServiceImplTest {
     }
 
     @Test
-    void testGetById() {
+    public void testGetById() {
         // Mock data
         Long feedbackId = 1L;
         Feedback feedback = new Feedback();
@@ -107,7 +109,7 @@ class FeedbackServiceImplTest {
     }
 
     @Test
-    void testDeleteById() {
+    public void testDeleteById() {
         // Mock data
         Long feedbackId = 1L;
 
