@@ -26,9 +26,10 @@ import com.metis.book.model.user.User;
 import com.metis.book.repository.AddressRepository;
 import com.metis.book.serviceImpl.AddressServiceImpl;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(MockitoJUnitRunner.class)
-@SpringBootTest(properties = "spring.config.name=application-test")
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class AddressServiceTest {
 
     @Mock

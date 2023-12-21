@@ -27,5 +27,5 @@ jobs:
         uses: actions/upload-artifact@v3
         if: success() || failure()
         with:
-          name: SpringBoot Report               # Name of the folder
-          path: target/site/serenity/           # Path to test results
+          name: Test Report
+          path: target/surefire-reports/  # Replace with the path to your test reports

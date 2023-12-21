@@ -20,7 +20,7 @@ import org.junit.runners.Suite;
     FeedbackServiceImplTest.class
     // Thêm các lớp kiểm thử khác nếu cần
 })
-public class TestSuite {
+public class TestSuiteTest {
     // Không cần thêm bất kỳ nội dung nào ở đây
 }
 
