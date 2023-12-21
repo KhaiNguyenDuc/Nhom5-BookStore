@@ -16,8 +16,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import com.metis.book.model.BookRequest;
 import com.metis.book.repository.BookRequestRepository;
+import org.springframework.boot.test.context.SpringBootTest;
 
 @RunWith(MockitoJUnitRunner.class)
+@SpringBootTest(properties = "spring.config.name=application-test")
 public class BookRequestImplTest {
 
     @Mock

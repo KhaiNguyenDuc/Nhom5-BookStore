@@ -4,19 +4,22 @@ import com.metis.book.serviceImpl.OrderTrackServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.junit.jupiter.MockitoExtension;
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.List;
 import com.metis.book.repository.*;
+import org.springframework.boot.test.context.SpringBootTest;
 
 
-
-@ExtendWith(MockitoExtension.class)
+@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest(properties = "spring.config.name=application-test")
 public class OrderTrackServiceImplTest {
 
     @Mock

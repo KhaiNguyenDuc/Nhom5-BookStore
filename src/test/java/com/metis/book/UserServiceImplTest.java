@@ -15,10 +15,12 @@ import com.metis.book.model.user.User;
 import com.metis.book.serviceImpl.UserServiceImpl;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.junit.jupiter.MockitoExtension;
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
@@ -27,9 +29,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import com.metis.book.repository.*;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@ExtendWith(MockitoExtension.class)
+@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest(properties = "spring.config.name=application-test")
 public class UserServiceImplTest {
 
     @Mock
@@ -265,22 +269,6 @@ public class UserServiceImplTest {
         when(registerRequest.getBirthday()).thenReturn("2002-06-06"); // or any non-null value
         when(registerRequest.getGender()).thenReturn("1"); // or any default non-null string
         // Set other necessary fields as needed for testing
-
-        // Mock necessary objects
-        Role role = new Role();
-        when(roleRepository.findByName(RoleName.USER)).thenReturn(role);
-
-        Image imageThumbnail = new Image();
-        when(imageRepository.save(imageThumbnail)).thenReturn(imageThumbnail);
-
-        Cart cartSaved = new Cart();
-        when(cartRepository.save(cartSaved)).thenReturn(cartSaved);
-
-        User userSaved = new User();
-        when(userRepository.save(userSaved)).thenReturn(userSaved);
-
-        Address address = new Address();
-        when(addressRepository.save(address)).thenReturn(address);
 
         // Call the method
         User createdUser = userService.createNewUserForAdmin(registerRequest);

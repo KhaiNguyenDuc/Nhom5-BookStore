@@ -3,9 +3,11 @@ package com.metis.book;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.mockito.ArgumentMatchers.any;
@@ -38,8 +40,10 @@ import com.metis.book.repository.CategoryRepository;
 import com.metis.book.repository.ImageRepository;
 import com.metis.book.repository.InventoryRepository;
 import com.metis.book.repository.LanguageRepository;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@ExtendWith(MockitoExtension.class)
+@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest(properties = "spring.config.name=application-test")
 public class BookServiceTest {
     
     @Mock
@@ -74,25 +78,9 @@ public class BookServiceTest {
         BookForm bookForm = createBookForm(); // You need to implement this method
         bookForm.setAuthors(Collections.emptyList());
         bookForm.setPrice("100");
-        // Mocking the behavior of repositories
-        when(authorRepository.findById(anyLong())).thenReturn(createMockAuthor());
-        when(languageRepository.findById(anyLong())).thenReturn(createMockLanguage());
-        when(categoryRepository.findById(anyLong())).thenReturn(createMockCategory());
-        when(inventoryRepository.save(any(Inventory.class))).thenReturn(createMockInventory());
-        when(bookRepository.save(any(Book.class))).thenReturn(createMockBook());
-        when(imageRepository.save(any(Image.class))).thenReturn(createMockImage());
 
-        // Act
-        // bookService.insert(bookForm);
-
-        // Assert
-        // Add assertions based on the expected behavior of the insert method
         verify(authorRepository, times(0)).findById(anyLong()); // No authors to find
-        // verify(languageRepository, times(1)).findById(anyLong());
-        // verify(categoryRepository, times(1)).findById(anyLong());
-        // verify(inventoryRepository, times(1)).save(any(Inventory.class));
-        // verify(bookRepository, times(1)).save(any(Book.class));
-        // verify(imageRepository, times(1)).save(any(Image.class));
+        ;
     }
 
     private BookForm createBookForm() {
@@ -218,8 +206,6 @@ public class BookServiceTest {
 
     private Book mockBook(Long id, String title,Long price) {
         Book book = mock(Book.class);
-        when(book.getId()).thenReturn(id);
-        when(book.getTitle()).thenReturn(title);
         when(book.getPrice()).thenReturn(price);
         return book;
     }

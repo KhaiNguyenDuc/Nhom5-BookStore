@@ -6,6 +6,7 @@ import com.metis.book.repository.AuthorRepository;
 import com.metis.book.repository.UserRepository;
 import com.metis.book.serviceImpl.AuthorServiceImpl;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
@@ -16,7 +17,12 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 import org.junit.Before;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest(properties = "spring.config.name=application-test")
 public class AuthorServiceImplTest {
 
     @Mock
