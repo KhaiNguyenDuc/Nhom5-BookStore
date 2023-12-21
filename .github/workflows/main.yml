@@ -1,14 +1,5 @@
-name: Build and Test Java Spring Boot Application
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -21,11 +12,14 @@ jobs:
           cache: maven
 
       - name: Test with Maven
-        run: mvn test
+        run: mvn clean test
 
-      - name: Test Report
+      - name: Generate JaCoCo Coverage Report
+        run: mvn jacoco:report
+
+      - name: Upload Coverage Report
         uses: actions/upload-artifact@v3
         if: success() || failure()
         with:
-          name: Test Report
-          path: target/surefire-reports/  # Replace with the path to your test reports
+          name: JaCoCo Coverage Report
+          path: target/site/jacoco/  # Path where JaCoCo reports are generated
