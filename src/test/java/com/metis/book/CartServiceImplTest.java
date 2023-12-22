@@ -5,8 +5,8 @@ import com.metis.book.model.Cart;
 import com.metis.book.model.CartItem;
 import com.metis.book.model.user.User;
 import com.metis.book.repository.BookRepository;
-import com.metis.book.repository.CartRepository;
 import com.metis.book.repository.CartItemReposirory;
+import com.metis.book.repository.CartReposiroty;
 import com.metis.book.repository.UserRepository;
 import com.metis.book.serviceImpl.CartServiceImpl;
 
@@ -32,7 +32,7 @@ import static org.mockito.Mockito.*;
 public class CartServiceImplTest {
 
     @Mock
-    private CartRepository cartRepository;
+    private CartReposiroty cartRepository;
 
     @Mock
     private CartItemReposirory cartItemRepository;
@@ -46,17 +46,21 @@ public class CartServiceImplTest {
     @InjectMocks
     private CartServiceImpl cartService;
 
+    @Mock
     private User user;
+
+    @Mock
     private Cart cart;
+
+    @Mock
     private Book book;
+
+    @Mock
     private CartItem cartItem;
 
     @Before
     public void setup() {
-        user = new User(); // Initialize User object as needed
-        cart = new Cart(); // Initialize Cart object as needed
-        book = new Book(); // Initialize Book object as needed
-        cartItem = new CartItem(); // Initialize CartItem object as needed
+
     }
 
     @Test

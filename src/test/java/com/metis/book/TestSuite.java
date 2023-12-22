@@ -17,7 +17,13 @@ import org.junit.runners.Suite;
         AuthorServiceImplTest.class,
         BookRequestImplTest.class,
         ContactServiceImplTest.class,
-        FeedbackServiceImplTest.class
+        FeedbackServiceImplTest.class,
+        AimServiceImplTest.class,
+        BlogServiceImplTest.class,
+        CartServiceImplTest.class,
+        CategoryServiceImplTest.class,
+        CustomUserServiceImplTest.class,
+
 // Thêm các lớp kiểm thử khác nếu cần
 })
 public class TestSuite {
